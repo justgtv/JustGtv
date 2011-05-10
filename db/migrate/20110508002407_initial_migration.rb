@@ -4,16 +4,19 @@
 class InitialMigration < ActiveRecord::Migration
   def self.up
   	
-  	create_table :user do |t|
+  	create_table :users do |t|
   		t.string :name   		
   	end
+    
+    
+    
+  User.create :name => "sam i am"
+  User.create :name => "puddin pie"
   
   	
   end 
   
   
-  #User.create :name => "sam i am"
-  #User.create :name => "puddin pie"
   
   def self.down
   	
