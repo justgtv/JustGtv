@@ -3,9 +3,6 @@
 #created May 2011 - JustGtv
 class InitialMigration < ActiveRecord::Migration
   def self.up
-  	
-  	
-    drop_table :user
     
     create_table :users do |t|
   		t.string :name   		
