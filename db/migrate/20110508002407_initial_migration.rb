@@ -4,7 +4,7 @@
 class InitialMigration < ActiveRecord::Migration
   def self.up
   	
-  	create_table :users do |t|
+  	create_table :user do |t|
   		t.string :name   		
   	end
   
@@ -17,7 +17,7 @@ class InitialMigration < ActiveRecord::Migration
   
   def self.down
   	
-  	drop_table :users
+  	drop_table :user
   	
   	
   	
