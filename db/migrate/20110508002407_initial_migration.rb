@@ -12,7 +12,8 @@ class InitialMigration < ActiveRecord::Migration
   end 
   
   
-  
+  User.create :name => "sam i am"
+  User.create :name => "puddin pie"
   
   def self.down
   	
